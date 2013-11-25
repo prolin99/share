@@ -589,7 +589,7 @@ function my_restore_temp_session($session_id_f='') {
         $i = 0;
         $del_time = time() - 3600;  // we delete file older then 1 hours
         while (false !== ($entry = readdir($d))) {
-            if ($entry != '.' && $entry != '..' && $entry != 'index.html' && $entry != '.htaccess') {
+            if ($entry != '.' && $entry != '..' && $entry != 'index.htm' && $entry != '.htaccess') {
                 $atime = fileatime(dirname(__FILE__) . '/session_cache/' . $entry);
                 if ($atime < $del_time) {
                     @unlink(dirname(__FILE__) . '/session_cache/' . $entry);
