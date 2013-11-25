@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+    <meta charset="utf-8">
+    <title>新營國小檔案分享空間</title>
+<script type="text/javascript">
+function uploadFinished(loc) {
+   // here you can do something after the upload - loc is the parameter you provide in the config!
+   // you can call e.g. a php page where you have stored infos during upload!
+}
+function previewSelect(loc) {
+    // here you can do something after the upload - loc is the parameter you provide in the config!
+   // you can call e.g. a php page where you have stored infos when selecting a file!
+}
+
+</script>
+<style type="text/css">
+.noflash {
+  padding:10px;
+  margin:10px;
+  border: 1px solid #555555;
+  background-color: #f8f8f8;
+  text-align:center;
+  width:330px;
+}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<script type="text/javascript" src="swfobject.js"></script>
+<div id="flashcontent"><div class="noflash">TWG Flash Uploader requires at least Flash 8.<br />Please update your browser.</div></div>
+<script type="text/javascript">
+   var so = new SWFObject("twg_flash_uploader.swf?lang=cn", "mymovie", "750", "440", "8", "#ffffff");
+   so.write("flashcontent");
+</script>
+<noscript>
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="750" height="440"  align="middle">
+<param name="allowScriptAccess" value="sameDomain" />
+<param name="movie" value="twg_flash_uploader.swf" /><param name="quality" value="high" /><param name="bgcolor" value="#ffffff" /><embed src="twg_flash_uploader.swf" quality="high" bgcolor="#ffffff" width="750" height="440" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+</object>
+</noscript>
+</body>
+</html>
