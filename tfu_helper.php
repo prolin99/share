@@ -539,6 +539,7 @@ function firefox_fix() {
 
 function store_temp_session()
 {
+    //session 暫存檔	
     global $session_double_fix;
     clearstatcache();
     if (file_exists(dirname(__FILE__) . '/session_cache') && session_id() != "") { // we do your own small session handling
@@ -558,6 +559,7 @@ function store_temp_session()
 
  
 function my_restore_temp_session($session_id_f='') {
+   //取回	session 暫存檔	 內容
     if (file_exists(dirname(__FILE__) . '/session_cache')) { // we do your own small session handling
         $cachename = dirname(__FILE__) . '/session_cache/' . $session_id_f;
         if (file_exists($cachename)) {
